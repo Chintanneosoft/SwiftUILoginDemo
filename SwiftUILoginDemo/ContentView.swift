@@ -25,7 +25,8 @@ struct ContentView: View {
                 Text("Submit").foregroundColor(.white)
                     .padding(.all, 10.0)
             }
-            .border(.black).background(.gray)
+            .background(.black).cornerRadius(10)
+            .padding(.top, 50.0)
             .alert(isPresented: self.$showAlert) {
               Alert(title: Text("Login Hogaya"), message: Text("Aisa Boluga socha thana"))
             }
